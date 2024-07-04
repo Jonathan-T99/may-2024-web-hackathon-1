@@ -1,0 +1,154 @@
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: rgb(222, 230, 238);
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 0.5em 0;
+}
+
+.contact-info p {
+    margin: 0.5em 0;
+}
+
+.contact-info a {
+    color: #fff;
+    text-decoration: none;
+    color: blue;
+}
+
+section {
+    padding: 2em;
+    margin: 5em;
+
+}
+
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5em;
+}
+
+ul li {
+    background: #f4f4f4;
+    margin: 0.5em 0;
+    padding: 0.5em;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+}
+
+/* Specific styles for sections */
+#portfolio {
+    background-color: #9a8383;
+    font-weight: bold;
+    border-radius: 10px;
+    text-align: center;
+    height: 600px;
+    width: 550px;
+}
+
+#skills {
+    background-color: rgb(6, 88, 88);
+    border-radius: 10px;
+    text-align: center;
+    height: 600px;
+    width: 550px;
+}
+
+#experience {
+    background-color: rgb(24, 67, 167);
+    text-align: center;
+    border-radius: 10px;
+    height: 600px;
+    width: 550px;
+}
+
+#education {
+    background-color: rgb(66, 141, 156);
+    text-align: center;
+    border-radius: 10px;
+    height: 600px;
+    width: 550px;
+}
+
+#contact {
+    background-color: #b09dc0;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.myDetails {
+    background-color: rgb(155, 63, 63);
+    font-size: 15px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    overflow: scroll;
+    max-height: 300px;
+}
+
+#send {
+    font-size: 25px;
+    border-radius: 5px;
+    background-color: blue;
+}
+
+#name, #message {
+    font-size: 20px;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+}
+
+/* Grid layout for rows */
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+/* Adjust margins for better layout */
+section {
+    padding: 2em;
+    margin: 2em 0;
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
